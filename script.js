@@ -2,7 +2,8 @@ var playerScore=0;
 var compScore = 0;
 function startpage(){
     var player =prompt("What's your name?");
-    document.getElementById('player').textContent = player;
+    if(player!="")
+        document.getElementById('player').textContent = player;
 }
 function play(){
     if(playerScore==3||compScore==3){
